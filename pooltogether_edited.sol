@@ -1,12 +1,61 @@
 // SPDX-License-Identifier: MIT
+pragma solidity ^0.8.6;
 
-pragma solidity 0.8.6;
 
-//import "./ExtendedSafeCastLib.sol";
-//import "./OverflowSafeComparatorLib.sol";
-//import "./RingBufferLib.sol";
-//import "./ObservationLib.sol";
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+import "@openzeppelin/contracts/utils/math/SafeCast.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@pooltogether/pooltogether-rng-contracts/contracts/RNGInterface.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/extensions/draft-ERC20Permit.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import "@pooltogether/owner-manager-contracts/contracts/Manageable.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import "@pooltogether/owner-manager-contracts/contracts/Ownable.sol";
+import "@pooltogether/owner-manager-contracts/contracts/Manageable.sol";
+import "@pooltogether/owner-manager-contracts/contracts/Manageable.sol";
+import "@openzeppelin/contracts/utils/math/SafeCast.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import "@pooltogether/pooltogether-rng-contracts/contracts/RNGInterface.sol";
+import "@pooltogether/owner-manager-contracts/contracts/Ownable.sol";
+import "@pooltogether/yield-source-interface/contracts/IYieldSource.sol";
+import "@openzeppelin/contracts/utils/math/SafeCast.sol";
+import "@pooltogether/pooltogether-rng-contracts/contracts/RNGInterface.sol";
+import "@pooltogether/owner-manager-contracts/contracts/Ownable.sol";
+import "@openzeppelin/contracts/utils/math/SafeCast.sol";
+import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
+import "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
+import "@openzeppelin/contracts/utils/introspection/ERC165Checker.sol";
+import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import "@pooltogether/owner-manager-contracts/contracts/Ownable.sol";
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/extensions/draft-ERC20Permit.sol";
+import "@pooltogether/pooltogether-rng-contracts/contracts/RNGInterface.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import "@openzeppelin/contracts/utils/Address.sol";
+import "@pooltogether/yield-source-interface/contracts/IYieldSource.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/extensions/draft-IERC20Permit.sol";
+import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+
+
+
+
+ 
 /**
   * @title  PoolTogether V4 TwabLib (Library)
   * @author PoolTogether Inc Team
@@ -436,7 +485,6 @@ library TwabLib {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
 
 library RingBufferLib {
     /**
@@ -499,7 +547,6 @@ library RingBufferLib {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
 
 /// @title OverflowSafeComparatorLib library to share comparator functions between contracts
 /// @dev Code taken from Uniswap V3 Oracle.sol: https://github.com/Uniswap/v3-core/blob/3e88af408132fc957e3e406f65a0ce2b1ca06c3d/contracts/libraries/Oracle.sol
@@ -570,12 +617,10 @@ library OverflowSafeComparatorLib {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-import "@openzeppelin/contracts/utils/math/SafeCast.sol";
 
-//import "./OverflowSafeComparatorLib.sol";
-//import "./RingBufferLib.sol";
+
 
 /**
 * @title Observation Library
@@ -666,7 +711,7 @@ library ObservationLib {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
 /**
  * @dev Wrappers over Solidity's uintXX/intXX casting operators with added overflow
@@ -733,9 +778,9 @@ library ExtendedSafeCastLib {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-//import "./RingBufferLib.sol";
+
 
 /// @title Library for creating and managing a draw ring buffer.
 library DrawRingBufferLib {
@@ -784,9 +829,8 @@ library DrawRingBufferLib {
     }
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-pragma solidity 0.8.6;
+ 
 
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 /** @title IControlledToken
   * @author PoolTogether Inc Team
@@ -831,10 +875,9 @@ interface IControlledToken is IERC20 {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-//import "../libraries/TwabLib.sol";
-//import "./IControlledToken.sol";
+
 
 interface ITicket is IControlledToken {
     /**
@@ -1028,7 +1071,7 @@ interface ITicket is IControlledToken {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
 interface IStrategy {
     /**
@@ -1047,9 +1090,8 @@ interface IStrategy {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 interface IReserve {
     /**
@@ -1099,10 +1141,8 @@ interface IReserve {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-//import "./IControlledToken.sol";
-//import "./IPrizePool.sol";
 
 /**
  * @title Abstract prize split contract for adding unique award distribution to static addresses.
@@ -1188,10 +1228,8 @@ interface IPrizeSplit {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-//import "../external/compound/ICompLike.sol";
-//import "../interfaces/ITicket.sol";
 
 interface IPrizePool {
     /// @dev Event emitted when controlled token is added
@@ -1383,12 +1421,10 @@ interface IPrizePool {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
-//import "./IDrawBuffer.sol";
-//import "./IDrawCalculator.sol";
+
 
 /** @title  IPrizeDistributor
   * @author PoolTogether Inc Team
@@ -1486,7 +1522,7 @@ interface IPrizeDistributor {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
 /** @title IPrizeDistributionSource
  * @author PoolTogether Inc Team
@@ -1528,9 +1564,8 @@ interface IPrizeDistributionSource {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-//import "./IPrizeDistributionSource.sol";
 
 /** @title  IPrizeDistributionBuffer
  * @author PoolTogether Inc Team
@@ -1626,12 +1661,8 @@ interface IPrizeDistributionBuffer is IPrizeDistributionSource {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-//import "./ITicket.sol";
-//import "./IDrawBuffer.sol";
-//import "../PrizeDistributionBuffer.sol";
-//import "../PrizeDistributor.sol";
 
 /**
  * @title  PoolTogether V4 IDrawCalculator
@@ -1694,9 +1725,9 @@ interface IDrawCalculator {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-//import "../interfaces/IDrawBeacon.sol";
+
 
 /** @title  IDrawBuffer
   * @author PoolTogether Inc Team
@@ -1774,10 +1805,9 @@ interface IDrawBuffer {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-import "@pooltogether/pooltogether-rng-contracts/contracts/RNGInterface.sol";
-//import "./IDrawBuffer.sol";
+
 
 /** @title  IDrawBeacon
   * @author PoolTogether Inc Team
@@ -1963,9 +1993,8 @@ interface IDrawBeacon {
 
 
 
-pragma solidity 0.8.6;
+ 
 
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 interface ICompLike is IERC20 {
     function getCurrentVotes(address account) external view returns (uint96);
@@ -1975,9 +2004,8 @@ interface ICompLike is IERC20 {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 interface CTokenInterface is IERC20 {
     function decimals() external view returns (uint8);
@@ -2007,11 +2035,9 @@ interface CTokenInterface is IERC20 {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-import "@openzeppelin/contracts/token/ERC20/extensions/draft-ERC20Permit.sol";
 
-//import "./interfaces/IControlledToken.sol";
 
 /**
  * @title  PoolTogether V4 Controlled ERC20 Token
@@ -2119,15 +2145,11 @@ contract ControlledToken is ERC20Permit, IControlledToken {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 
-//import "./libraries/ExtendedSafeCastLib.sol";
-//import "./libraries/TwabLib.sol";
-//import "./interfaces/ITicket.sol";
-//import "./ControlledToken.sol";
+
+
 
 /**
   * @title  PoolTogether V4 Ticket
@@ -2543,15 +2565,11 @@ contract Ticket is ControlledToken, ITicket {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-import "@pooltogether/owner-manager-contracts/contracts/Manageable.sol";
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 
-//import "./interfaces/IReserve.sol";
-//import "./libraries/ObservationLib.sol";
-//import "./libraries/RingBufferLib.sol";
+
+
 
 /**
     * @title  PoolTogether V4 Reserve
@@ -2809,14 +2827,11 @@ contract Reserve is IReserve, Manageable {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
-import "@pooltogether/owner-manager-contracts/contracts/Ownable.sol";
 
-//import "./interfaces/IPrizeDistributor.sol";
-//import "./interfaces/IDrawCalculator.sol";
+
+
 
 /**
     * @title  PoolTogether V4 PrizeDistributor
@@ -2988,12 +3003,10 @@ contract PrizeDistributor is IPrizeDistributor, Ownable {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-import "@pooltogether/owner-manager-contracts/contracts/Manageable.sol";
 
-//import "./libraries/DrawRingBufferLib.sol";
-//import "./interfaces/IPrizeDistributionBuffer.sol";
+
 
 /**
   * @title  PoolTogether V4 PrizeDistributionBuffer
@@ -3217,14 +3230,9 @@ contract PrizeDistributionBuffer is IPrizeDistributionBuffer, Manageable {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-//import "./interfaces/ITicket.sol";
-//import "./interfaces/IDrawBuffer.sol";
-//import "./interfaces/IPrizeDistributionSource.sol";
-//import "./interfaces/IDrawBeacon.sol";
 
-//import "./PrizeDistributor.sol";
 
 /**
   * @title  PoolTogether V4 DrawCalculatorV2
@@ -3679,13 +3687,8 @@ contract DrawCalculatorV2 {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-//import "./interfaces/IDrawCalculator.sol";
-//import "./interfaces/ITicket.sol";
-//import "./interfaces/IDrawBuffer.sol";
-//import "./interfaces/IPrizeDistributionBuffer.sol";
-//import "./interfaces/IDrawBeacon.sol";
 
 /**
   * @title  PoolTogether V4 DrawCalculator
@@ -4110,13 +4113,10 @@ contract DrawCalculator is IDrawCalculator {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-import "@pooltogether/owner-manager-contracts/contracts/Manageable.sol";
 
-//import "./interfaces/IDrawBuffer.sol";
-//import "./interfaces/IDrawBeacon.sol";
-//import "./libraries/DrawRingBufferLib.sol";
+
 
 /**
   * @title  PoolTogether V4 DrawBuffer
@@ -4285,17 +4285,10 @@ contract DrawBuffer is IDrawBuffer, Manageable {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-import "@openzeppelin/contracts/utils/math/SafeCast.sol";
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 
-import "@pooltogether/pooltogether-rng-contracts/contracts/RNGInterface.sol";
-import "@pooltogether/owner-manager-contracts/contracts/Ownable.sol";
 
-//import "./interfaces/IDrawBeacon.sol";
-//import "./interfaces/IDrawBuffer.sol";
 
 
 /**
@@ -4760,9 +4753,8 @@ contract DrawBeacon is IDrawBeacon, Ownable {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-import "@pooltogether/yield-source-interface/contracts/IYieldSource.sol";
 
 interface YieldSourceStub is IYieldSource {
     function canAwardExternal(address _externalToken) external view returns (bool);
@@ -4770,10 +4762,9 @@ interface YieldSourceStub is IYieldSource {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-//import "../libraries/TwabLib.sol";
-//import "../libraries/RingBufferLib.sol";
+
 
 /// @title TwabLibExposed contract to test TwabLib library
 /// @author PoolTogether Inc.
@@ -4885,11 +4876,10 @@ contract TwabLibExposed {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-import "@openzeppelin/contracts/utils/math/SafeCast.sol";
 
-//import "../Ticket.sol";
+
 
 contract TicketHarness is Ticket {
     using SafeCast for uint256;
@@ -4955,10 +4945,8 @@ contract TicketHarness is Ticket {
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-pragma solidity 0.8.6;
+ 
 
-//import "../Reserve.sol";
-//import "./ERC20Mintable.sol";
 
 contract ReserveHarness is Reserve {
     constructor(address _owner, IERC20 _token) Reserve(_owner, _token) {}
@@ -4981,9 +4969,8 @@ contract ReserveHarness is Reserve {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-import "@pooltogether/pooltogether-rng-contracts/contracts/RNGInterface.sol";
 
 contract RNGServiceMock is RNGInterface {
     uint256 internal random;
@@ -5028,11 +5015,9 @@ contract RNGServiceMock is RNGInterface {
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-pragma solidity 0.8.6;
+ 
 
-import "@pooltogether/owner-manager-contracts/contracts/Ownable.sol";
 
-//import "../interfaces/IPrizeSplit.sol";
 
 /**
  * @title PrizeSplit Interface
@@ -5195,11 +5180,8 @@ abstract contract PrizeSplit is IPrizeSplit, Ownable {
 
 
 
-pragma solidity 0.8.6;
+ 
 
-//import "./PrizeSplit.sol";
-//import "../interfaces/IStrategy.sol";
-//import "../interfaces/IPrizePool.sol";
 
 /**
   * @title  PoolTogether V4 PrizeSplitStrategy
@@ -5279,10 +5261,8 @@ contract PrizeSplitStrategy is PrizeSplit, IStrategy {
 
 
 
-pragma solidity 0.8.6;
+ 
 
-//import "../prize-strategy/PrizeSplit.sol";
-//import "../interfaces/IControlledToken.sol";
 
 contract PrizeSplitHarness is PrizeSplit {
     constructor(address _owner) Ownable(_owner) {}
@@ -5300,19 +5280,11 @@ contract PrizeSplitHarness is PrizeSplit {
     }
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-pragma solidity 0.8.6;
+ 
 
-import "@openzeppelin/contracts/utils/math/SafeCast.sol";
-import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
-import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
-import "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
-import "@openzeppelin/contracts/utils/introspection/ERC165Checker.sol";
-import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
-import "@pooltogether/owner-manager-contracts/contracts/Ownable.sol";
 
-//import "../external/compound/ICompLike.sol";
-//import "../interfaces/IPrizePool.sol";
-//import "../interfaces/ITicket.sol";
+
+
 
 /**
   * @title  PoolTogether V4 PrizePool
@@ -5754,10 +5726,8 @@ abstract contract PrizePool is IPrizePool, Ownable, ReentrancyGuard, IERC721Rece
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-//import "../prize-pool/PrizePool.sol";
-//import "./YieldSourceStub.sol";
 
 contract PrizePoolHarness is PrizePool {
     uint256 public currentTime;
@@ -5823,9 +5793,8 @@ contract PrizePoolHarness is PrizePool {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
 /**
  * @dev Extension of {ERC721} for Minting/Burning
@@ -5850,9 +5819,8 @@ contract ERC721Mintable is ERC721 {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 /**
  * @dev Extension of {ERC20} that adds a set of accounts with the {MinterRole},
@@ -5890,9 +5858,8 @@ contract ERC20Mintable is ERC20 {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-import "@openzeppelin/contracts/token/ERC20/extensions/draft-ERC20Permit.sol";
 
 /**
  * @dev Extension of {ERC20Permit} that adds a set of accounts with the {MinterRole},
@@ -5934,9 +5901,8 @@ contract EIP2612PermitMintable is ERC20Permit {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-//import "../libraries/DrawRingBufferLib.sol";
 
 /**
  * @title  Expose the DrawRingBufferLibrary for unit tests
@@ -5971,9 +5937,8 @@ contract DrawRingBufferLibExposed {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-//import "../DrawCalculatorV2.sol";
 
 contract DrawCalculatorV2Harness is DrawCalculatorV2 {
     constructor(
@@ -6027,9 +5992,8 @@ contract DrawCalculatorV2Harness is DrawCalculatorV2 {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-//import "../DrawCalculator.sol";
 
 contract DrawCalculatorHarness is DrawCalculator {
     constructor(
@@ -6083,10 +6047,9 @@ contract DrawCalculatorHarness is DrawCalculator {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-//import "../DrawBuffer.sol";
-//import "../interfaces/IDrawBeacon.sol";
+
 
 contract DrawBufferHarness is DrawBuffer {
     constructor(address owner, uint8 card) DrawBuffer(owner, card) {}
@@ -6113,12 +6076,10 @@ contract DrawBufferHarness is DrawBuffer {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-import "@pooltogether/pooltogether-rng-contracts/contracts/RNGInterface.sol";
 
-//import "../DrawBeacon.sol";
-//import "../interfaces/IDrawBuffer.sol";
+
 
 contract DrawBeaconHarness is DrawBeacon {
     constructor(
@@ -6157,9 +6118,8 @@ contract DrawBeaconHarness is DrawBeacon {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-//import "../../libraries/OverflowSafeComparatorLib.sol";
 
 contract OverflowSafeComparatorLibHarness {
     using OverflowSafeComparatorLib for uint32;
@@ -6191,9 +6151,8 @@ contract OverflowSafeComparatorLibHarness {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-//import "../../libraries/ObservationLib.sol";
 
 /// @title Time-Weighted Average Balance Library
 /// @notice This library allows you to efficiently track a user's historic balance.  You can get a
@@ -6238,9 +6197,8 @@ contract ObservationLibHarness {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-//import "../../libraries/ExtendedSafeCastLib.sol";
 
 contract ExtendedSafeCastLibHarness {
     using ExtendedSafeCastLib for uint256;
@@ -6260,9 +6218,8 @@ contract ExtendedSafeCastLibHarness {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-//import "../../libraries/DrawRingBufferLib.sol";
 
 /**
  * @title  Expose the DrawRingBufferLib for unit tests
@@ -6300,9 +6257,8 @@ contract DrawRingBufferLibHarness {
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-pragma solidity 0.8.6;
+ 
 
-//import "../prize-strategy/PrizeSplitStrategy.sol";
 
 contract PrizeSplitStrategyHarness is PrizeSplitStrategy {
     constructor(address _owner, IPrizePool _prizePool) PrizeSplitStrategy(_owner, _prizePool) {}
@@ -6317,14 +6273,10 @@ contract PrizeSplitStrategyHarness is PrizeSplitStrategy {
 
 
 
-pragma solidity 0.8.6;
+ 
 
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
-import "@openzeppelin/contracts/utils/Address.sol";
-import "@pooltogether/yield-source-interface/contracts/IYieldSource.sol";
 
-//import "./PrizePool.sol";
+
 
 /**
  * @title  PoolTogether V4 YieldSourcePrizePool
@@ -6422,11 +6374,9 @@ contract YieldSourcePrizePool is PrizePool {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-pragma solidity 0.8.6;
+ 
 
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
-//import "./PrizePool.sol";
 
 /**
  * @title  PoolTogether V4 StakePrizePool
@@ -6492,14 +6442,10 @@ contract StakePrizePool is PrizePool {
 
 
 
-pragma solidity 0.8.6;
+ 
 
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "@openzeppelin/contracts/token/ERC20/extensions/draft-IERC20Permit.sol";
-import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 
-//import "../interfaces/IPrizePool.sol";
-//import "../interfaces/ITicket.sol";
+
 
 /**
  * @notice Secp256k1 signature values.
