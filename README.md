@@ -1,1 +1,1 @@
-# pooltogether_edited
+# PoolTogether
